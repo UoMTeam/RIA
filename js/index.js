@@ -13,9 +13,9 @@
 $("document").ready(function () {
     $("[name = chooseAll]:radio").bind("click", function (event) {
         if (event.target.id== "chooseAll") {
-            $("[name = title]:checkbox").attr("checked","checked");
+            $("[name = title]").prop("checked",true);
         } else {
-            $("[name = title]:checkbox").removeAttr("checked")
+            $("[name = title]").prop("checked",false);
         }
     });
 });
