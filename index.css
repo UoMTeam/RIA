@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#table{
+    width: 1160px;
+    margin: 100px auto 0;
+}
+/*button{*/
+    /*width:65px;*/
+    /*height: 20px;*/
+/*}*/
+.green{
+    color: rgb(119,230,108);
+}
