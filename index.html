@@ -23,58 +23,65 @@
 </nav>
 
 <div id="table">
-<table class="table table-hover">
-    <thead>
-    <tr>
-        <th>标题</th>
-        <th>时间</th>
-        <th>状态</th>
-        <th>操作
-            <a id="addnew" href="addnew.html">新建问卷</a>
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><input type="radio" name="title">这是我的第一份问卷</td>
-        <td>2016-04-12 20:46:52</td>
-        <td class="green">发布中</td>
-        <td><button type="button" class="btn btn-default">编辑</button>
-            <button type="button" class="btn btn-default" data-toggle="modal"
-                    data-target="#delete">删除</button>
-            <button type="button" class="btn btn-default">查看数据</button>
-        </td>
-    </tr>
-    <tr>
-        <td><input type="radio" name="title">这是我的第一份问卷</td>
-        <td>2016-04-12 20:46:52</td>
-        <td>未发布</td>
-        <td><button type="button" class="btn btn-default">编辑</button>
-            <button type="button" class="btn btn-default" data-toggle="modal"
-                    data-target="#delete">删除</button>
-            <button type="button" class="btn btn-default">查看数据</button>
-        </td>
-    </tr>
-    <tr>
-        <td><input type="radio" name="title">这是我的第一份问卷</td>
-        <td>2016-04-12 20:46:52</td>
-        <td>已结束</td>
-        <td><button type="button" class="btn btn-default">编辑</button>
-            <button type="button" class="btn btn-default" data-toggle="modal"
-                    data-target="#delete">删除</button>
-            <button type="button" class="btn btn-default">查看数据</button>
-        </td>
-    </tr>
-    <tr>
-        <td><input type="radio" name="chooseAll">全选
-            <button type="button" class="btn btn-default">删除</button>
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    </tbody>
-</table>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>标题</th>
+            <th>时间</th>
+            <th>状态</th>
+            <th>操作
+                <a id="addnew" href="addnew.html">新建问卷</a>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox" name="title">这是我的第一份问卷</td>
+            <td>2016-04-12 20:46:52</td>
+            <td class="green">发布中</td>
+            <td>
+                <button type="button" class="btn btn-default">编辑</button>
+                <button type="button" class="btn btn-default" data-toggle="modal"
+                        data-target="#delete">删除
+                </button>
+                <button type="button" class="btn btn-default">查看数据</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="title">这是我的第一份问卷</td>
+            <td>2016-04-12 20:46:52</td>
+            <td>未发布</td>
+            <td>
+                <button type="button" class="btn btn-default">编辑</button>
+                <button type="button" class="btn btn-default" data-toggle="modal"
+                        data-target="#delete">删除
+                </button>
+                <button type="button" class="btn btn-default">查看数据</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="title">这是我的第一份问卷</td>
+            <td>2016-04-12 20:46:52</td>
+            <td>已结束</td>
+            <td>
+                <button type="button" class="btn btn-default">编辑</button>
+                <button type="button" class="btn btn-default" data-toggle="modal"
+                        data-target="#delete">删除
+                </button>
+                <button type="button" class="btn btn-default">查看数据</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="chooseAll" id="chooseAll"><label for="chooseAll">全选</label>
+                <input type="radio" name="chooseAll" id="NchooseAll"><label for="NchooseAll">全不选</label>
+                <button type="button" class="btn btn-default">删除</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="delete" tabindex="-1" role="dialog"
