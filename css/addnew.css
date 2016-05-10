@@ -30,3 +30,22 @@
     -moz-border-radius: 2px;
 
 }
+#addQ{
+    cursor: pointer;
+}
+#addItems{
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+}
+#addItems button{
+    margin: auto;
+}
+#addThings{
+    border: 1px solid #ccc;
+}
+.well{
+    margin-bottom: 0px;
+    height: 85px;
+    line-height:35px;
+}

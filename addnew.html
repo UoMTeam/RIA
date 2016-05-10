@@ -26,15 +26,53 @@
 <div id="wrap">
     <input id="addTitle" type="text" value="这里是标题">
     <hr>
-    <div class="well"><label>添加问题</label></div>
+    <div id="addThings">
+    <div id="addItems" hidden="hidden">
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record">单选</span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-check">多选</span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-list-alt">文本题</span></button>
+    </div>
+    <div class="well">
+        <label id="addQ"><span class="glyphicon glyphicon-plus"></span>添加问题</label>
+    </div>
+    </div>
     <hr>
     <div class="input-append date" id="datetimepicker">
         <label>问卷截至日期</label>
         <span class="glyphicon glyphicon-calendar"></span>
         <input id="date" type="text">
         <button type="button" class="btn btn-default">保存问卷</button>
-        <button type="button" class="btn btn-default">发布问卷</button>
+        <button type="button" class="btn btn-default" data-toggle="modal"
+                data-target="#publish">发布问卷</button>
     </div>
+</div>
+<div class="modal fade" id="publish" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    提示
+                </h4>
+            </div>
+            <div class="modal-body">
+                <span>是否发布问卷?</span>
+                <p>此问卷截至日期为~~~~</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                    确定
+                </button>
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">取消
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 </body>
 </html>

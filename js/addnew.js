@@ -10,4 +10,10 @@ $(function(){
         todayHighlight: true,
         showMeridian: 1
     });
+
+
+    $("#addQ").click(function(){
+        $("#addItems").slideToggle("slow");
+    });
+
 });
