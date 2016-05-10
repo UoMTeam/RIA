@@ -7,7 +7,7 @@ $(function(){
         weekStart: 1,
         todayBtn:  1,
         autoclose: 1,
-        todayHighlight: 1,
+        todayHighlight: true,
         showMeridian: 1
     });
 });
