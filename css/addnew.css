@@ -52,13 +52,13 @@
     width:100%;
     float: left;
 }
-.option{
+.option,.texttitle{
     border:none;
 }
 #questions{
     text-align: left;!important;
 }
-#questions input{
+#questions input,.texttitle{
     background: none;
 }
 #questions div div a{
@@ -73,4 +73,9 @@
 }
 #questions div div{
     text-align: right;!important;
+}
+textarea{
+    resize: none;
+    width: 535px;
+    height: 100px;
 }
