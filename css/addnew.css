@@ -57,3 +57,22 @@
 .option{
     border:none;
 }
+#questions{
+    text-align: left;!important;
+}
+#questions input{
+    background: none;
+}
+#questions div div a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#questions div,#questions div div a{
+    padding: 0 10px 0 0;
+}
+#questions div:hover{
+    background: rgb(253,242,232);
+}
+#questions div div{
+    text-align: right;!important;
+}
